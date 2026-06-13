@@ -1,10 +1,10 @@
-import friend1 from "../assets/img/friend1.jpeg"
-import friend2 from "../assets/img/friend2.jpeg"
-import nichol1 from "../assets/img/nichol1.jpeg"
-import nichol2 from "../assets/img/nichol2.jpeg"
-import nichol3 from "../assets/img/nichol3.jpeg"
-import nichol4 from "../assets/img/nichol4.jpeg"
-import nichol6 from "../assets/img/nichol6.jpeg"
+import friend1 from "../assets/img/friend1.avif"
+import friend2 from "../assets/img/friend2.avif"
+import nichol1 from "../assets/img/nichol1.avif"
+import nichol2 from "../assets/img/nichol2.avif"
+import nichol3 from "../assets/img/nichol3.avif"
+import nichol4 from "../assets/img/nichol4.avif"
+import nichol6 from "../assets/img/nichol6.avif"
 
 const capTwoData = {
   title: "Capítulo 2",

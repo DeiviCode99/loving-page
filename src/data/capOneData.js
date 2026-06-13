@@ -1,8 +1,8 @@
-import nichol1 from "../assets/img/nichol1.jpeg";
-import nichol2 from "../assets/img/nichol2.jpeg";
-import nichol3 from "../assets/img/nichol3.jpeg";
-import nichol4 from "../assets/img/nichol4.jpeg";
-import nichol5 from "../assets/img/nichol5.jpeg";
+import nichol1 from "../assets/img/nichol1.avif";
+import nichol2 from "../assets/img/nichol2.avif";
+import nichol3 from "../assets/img/nichol3.avif";
+import nichol4 from "../assets/img/nichol4.avif";
+import nichol5 from "../assets/img/nichol5.avif";
 
 const capOneData = {
   title: "Capítulo 1",
