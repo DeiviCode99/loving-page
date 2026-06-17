@@ -18,7 +18,7 @@ Cada paso, cada juego y cada recuerdo ayudaron a construir la persona maravillos
 Este es un pequeño viaje hacia aquellos primeros años que marcaron el inicio de una vida extraordinaria.
   `,
 
-  answer: "Nina",
+  answer: "Luna",
 
   question: "¿Cual era el nombre de tu primera mascota?",
 
