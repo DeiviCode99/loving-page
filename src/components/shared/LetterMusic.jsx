@@ -124,7 +124,7 @@ const LetterMusic = ({ text }) => {
                   transition={{ duration: 2.5, repeat: Infinity }}
                   className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-violet-500/60 text-sm font-medium whitespace-nowrap tracking-wide"
                 >
-                  🎵 Toca el sobre para abrirlo
+                  <Music className="inline mr-1" size={12} /> Toca el sobre para abrirlo
                 </motion.span>
               )}
             </motion.div>

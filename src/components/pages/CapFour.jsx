@@ -7,6 +7,7 @@ import {
   Sparkles,
   Gift,
   Moon,
+  Sun,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import capFourData from "../../data/capFourData.js";
@@ -43,7 +44,7 @@ const SectionDivider = ({ delay = 0 }) => (
     className="flex items-center justify-center gap-2 my-16"
   >
     <div className="h-px w-12 bg-gradient-to-r from-transparent via-yellow-300/60 to-transparent" />
-    <span className="text-yellow-300/60 text-lg">💛</span>
+    <Sun className="text-yellow-300/60" size={16} />
     <div className="h-px w-12 bg-gradient-to-r from-transparent via-yellow-300/60 to-transparent" />
   </motion.div>
 );
@@ -104,13 +105,13 @@ const CapFour = () => {
       >
         <motion.div variants={itemVariants} className="text-center mb-6">
           <span className="inline-block px-5 py-1.5 bg-white/70 backdrop-blur-sm rounded-full text-sm text-yellow-600 font-medium shadow-sm border border-yellow-200/50">
-            💛 Capítulo 4 de 5
+            <Star className="inline" size={14} fill="currentColor" /> Capítulo 4 de 5
           </span>
         </motion.div>
 
         <motion.h1
           variants={itemVariants}
-          className="text-center text-5xl md:text-7xl font-bold bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500 bg-clip-text text-transparent mb-2"
+          className="text-center text-5xl md:text-7xl font-script font-bold bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500 bg-clip-text text-transparent mb-2"
         >
           {capFourData.title}
         </motion.h1>
@@ -281,7 +282,7 @@ const CapFour = () => {
                 </motion.div>
 
                 <TreasureButton disabled={!answer}>
-                  ✨ Desbloquear recuerdo
+                  <Sparkles className="inline" size={16} /> Desbloquear recuerdo
                 </TreasureButton>
               </form>
             </motion.div>

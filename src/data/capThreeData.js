@@ -14,6 +14,8 @@ import uni13 from "../assets/img/uni13.avif"
 import uni14 from "../assets/img/uni14.avif"
 import uni15 from "../assets/img/uni15.avif"
 import uni16 from "../assets/img/uni16.avif"
+import uni17 from "../assets/img/uni17.avif"
+import uni18 from "../assets/img/uni18.avif"
 
 const capThreeData = {
   title: "Capítulo 3",
@@ -52,6 +54,8 @@ Te amo. 💚
     uni14,
     uni15,
     uni16,
+    uni17,
+    uni18,
   ],
 
   qualities: [

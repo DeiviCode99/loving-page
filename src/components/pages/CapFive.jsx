@@ -138,13 +138,13 @@ const CapFive = () => {
             transition={{ duration: 3, repeat: Infinity }}
             className="inline-block px-5 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-sm text-rose-300 font-medium shadow-sm border border-rose-500/30"
           >
-            💖 Capítulo 5 de 5 — Final
+            <Heart className="inline" size={14} fill="currentColor" /> Capítulo 5 de 5 — Final
           </motion.span>
         </motion.div>
 
         <motion.h1
           variants={itemVariants}
-          className="text-center text-6xl md:text-8xl font-bold bg-gradient-to-r from-rose-300 via-pink-200 to-amber-200 bg-clip-text text-transparent mb-2 drop-shadow-[0_0_30px_rgba(255,150,200,0.15)]"
+          className="text-center text-6xl md:text-8xl font-script font-bold bg-gradient-to-r from-rose-300 via-pink-200 to-amber-200 bg-clip-text text-transparent mb-2 drop-shadow-[0_0_30px_rgba(255,150,200,0.15)]"
         >
           {capFiveData.title}
         </motion.h1>

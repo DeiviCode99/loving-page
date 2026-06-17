@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Heart, LockKeyhole } from "lucide-react";
+import { Heart, LockKeyhole, Sparkles, Gift } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Confetti from "react-confetti";
 import TreasureButton from "../shared/TreasureButtom.jsx";
@@ -132,7 +132,7 @@ const Login = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.6 }}
-                    className="text-3xl md:text-4xl font-bold text-white text-center drop-shadow-lg"
+                    className="text-4xl md:text-5xl font-script font-bold text-white text-center drop-shadow-lg"
                   >
                     Un Recorrido por tu Vida
                   </motion.h1>
@@ -143,13 +143,13 @@ const Login = () => {
                     transition={{ delay: 0.6, duration: 0.6 }}
                     className="text-white/50 text-sm mt-3 text-center"
                   >
-                    Ingresa tu fecha especial para comenzar este viaje ✨
+                    Ingresa tu fecha especial para comenzar este viaje <Sparkles className="inline" size={14} />
                   </motion.p>
                 </div>
 
                 <form onSubmit={handleSubmit}>
                   <label className="block mb-2 text-white/80 font-medium text-sm">
-                    Tu cumple 🎉
+                    Tu cumple <Gift className="inline" size={14} />
                   </label>
 
                   <motion.div
@@ -190,7 +190,7 @@ const Login = () => {
                     </motion.p>
                   )}
 
-                  <TreasureButton disabled={!date}>✨ Desbloquear</TreasureButton>
+                  <TreasureButton disabled={!date}>                <Sparkles className="inline" size={16} /> Desbloquear</TreasureButton>
                 </form>
               </>
             ) : (
@@ -224,7 +224,7 @@ const Login = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.6 }}
-                  className="text-white/50 text-sm mt-2 text-center"
+                  className="text-white/60 text-sm mt-2 text-center font-script"
                 >
                   Prepara tu corazón para este viaje...
                 </motion.p>

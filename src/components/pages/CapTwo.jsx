@@ -8,6 +8,7 @@ import {
   Sparkles,
   Gift,
   Headphones,
+  Music2,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import capTwoData from "../../data/capTwoData.js";
@@ -47,7 +48,7 @@ const SectionDivider = ({ delay = 0 }) => (
     className="flex items-center justify-center gap-2 my-16"
   >
     <div className="h-px w-12 bg-gradient-to-r from-transparent via-violet-300/60 to-transparent" />
-    <span className="text-violet-300/60 text-lg">🎵</span>
+    <Music className="text-violet-300/60" size={16} />
     <div className="h-px w-12 bg-gradient-to-r from-transparent via-violet-300/60 to-transparent" />
   </motion.div>
 );
@@ -121,14 +122,14 @@ const CapTwo = () => {
         {/* ===== PROGRESO ===== */}
         <motion.div variants={itemVariants} className="text-center mb-6">
           <span className="inline-block px-5 py-1.5 bg-white/70 backdrop-blur-sm rounded-full text-sm text-violet-500 font-medium shadow-sm border border-violet-200/50">
-            💜 Capítulo 2 de 5
+            <Music2 className="inline" size={14} /> Capítulo 2 de 5
           </span>
         </motion.div>
 
         {/* ===== TÍTULO ===== */}
         <motion.h1
           variants={itemVariants}
-          className="text-center text-5xl md:text-7xl font-bold bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500 bg-clip-text text-transparent mb-2"
+          className="text-center text-5xl md:text-7xl font-script font-bold bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500 bg-clip-text text-transparent mb-2"
         >
           {capTwoData.title}
         </motion.h1>
@@ -448,7 +449,7 @@ const CapTwo = () => {
                 </motion.div>
 
                 <TreasureButton disabled={!answer}>
-                  ✨ Desbloquear recuerdo
+                  <Sparkles className="inline" size={16} /> Desbloquear recuerdo
                 </TreasureButton>
               </form>
             </motion.div>

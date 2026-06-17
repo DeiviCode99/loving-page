@@ -119,13 +119,13 @@ const Letter = ({ text }) => {
               </motion.div>
 
               {/* Texto de ayuda */}
-              {phase === "closed" && (
+                {phase === "closed" && (
                 <motion.span
                   animate={{ opacity: [0.4, 0.8, 0.4] }}
                   transition={{ duration: 2.5, repeat: Infinity }}
                   className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-amber-700/50 text-sm font-medium whitespace-nowrap tracking-wide"
                 >
-                  ✉️ Toca el sobre para abrirlo
+                  <Heart className="inline mr-1" size={12} fill="currentColor" /> Toca el sobre para abrirlo
                 </motion.span>
               )}
             </motion.div>

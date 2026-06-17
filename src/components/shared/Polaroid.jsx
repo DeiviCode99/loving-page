@@ -5,7 +5,7 @@ const Polaroid = ({ src, rotate }) => {
         bg-white
         p-3
         shadow-xl
-        hover:scale-110
+        hover:scale-110 hover:shadow-2xl hover:shadow-rose-200/30
         transition-all
         duration-300
         ${rotate}

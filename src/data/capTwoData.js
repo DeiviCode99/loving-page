@@ -1,9 +1,9 @@
 import friend1 from "../assets/img/friend1.avif"
 import friend2 from "../assets/img/friend2.avif"
-import nichol1 from "../assets/img/nichol1.avif"
-import nichol2 from "../assets/img/nichol2.avif"
-import nichol3 from "../assets/img/nichol3.avif"
-import nichol4 from "../assets/img/nichol4.avif"
+import friend3 from "../assets/img/friend3.avif"
+import friend4 from "../assets/img/friend4.avif"
+import friend5 from "../assets/img/friend5.avif"
+import friend6 from "../assets/img/friend6.avif"
 import nichol6 from "../assets/img/nichol6.avif"
 
 const capTwoData = {
@@ -27,10 +27,10 @@ Esa humildad, esa amabilidad y esa disposición genuina a dar sin esperar nada a
   photos: [
     friend1,
     friend2,
-    nichol1,
-    nichol2,
-    nichol3,
-    nichol4,
+    friend3,
+    friend4,
+    friend5,
+    friend6
   ],
 
   notes: [

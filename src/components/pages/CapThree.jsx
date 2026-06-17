@@ -7,6 +7,7 @@ import {
   Sparkles,
   GraduationCap,
   BookOpen,
+  TreePine,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import capThreeData from "../../data/capThreeData.js";
@@ -44,7 +45,7 @@ const SectionDivider = ({ delay = 0 }) => (
     className="flex items-center justify-center gap-2 my-16"
   >
     <div className="h-px w-12 bg-gradient-to-r from-transparent via-emerald-300/60 to-transparent" />
-    <span className="text-emerald-300/60 text-lg">👷🏻</span>
+    <Star className="text-emerald-300/60" size={16} fill="currentColor" />
     <div className="h-px w-12 bg-gradient-to-r from-transparent via-emerald-300/60 to-transparent" />
   </motion.div>
 );
@@ -109,14 +110,14 @@ const CapThree = () => {
         {/* ===== PROGRESO ===== */}
         <motion.div variants={itemVariants} className="text-center mb-6">
           <span className="inline-block px-5 py-1.5 bg-white/70 backdrop-blur-sm rounded-full text-sm text-emerald-500 font-medium shadow-sm border border-emerald-200/50">
-            🌱 Capítulo 3 de 5
+            <TreePine className="inline" size={14} /> Capítulo 3 de 5
           </span>
         </motion.div>
 
         {/* ===== TÍTULO ===== */}
         <motion.h1
           variants={itemVariants}
-          className="text-center text-5xl md:text-7xl font-bold bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 bg-clip-text text-transparent mb-2"
+          className="text-center text-5xl md:text-7xl font-script font-bold bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 bg-clip-text text-transparent mb-2"
         >
           {capThreeData.title}
         </motion.h1>
@@ -315,7 +316,7 @@ const CapThree = () => {
                 </motion.div>
 
                 <TreasureButton disabled={!answer}>
-                  ✨ Desbloquear recuerdo
+                  <Sparkles className="inline" size={16} /> Desbloquear recuerdo
                 </TreasureButton>
               </form>
             </motion.div>
