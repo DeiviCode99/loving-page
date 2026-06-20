@@ -181,7 +181,7 @@ const CapFive = () => {
         </motion.div>
 
         {/* ===== VIDEO PLAYER ESTILIZADO ===== */}
-        <motion.div variants={itemVariants} className="max-w-2xl mx-auto mb-16">
+        <motion.div variants={itemVariants} className="max-w-xs mx-auto mb-16">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -242,7 +242,7 @@ const CapFive = () => {
                   <video
                     ref={videoRef}
                     src={finalVideo}
-                    className="w-full aspect-video object-cover"
+                    className="w-full aspect-[9/16] object-cover"
                     playsInline
                     onEnded={() => setPlaying(false)}
                   />
