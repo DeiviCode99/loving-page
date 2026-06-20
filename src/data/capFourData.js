@@ -48,7 +48,7 @@ Nunca cambies, se quien eres y lleva ese angelito contigo siempre. 💛
 
   question: "¿Cuál es el nombre de tu abuela materna?",
 
-  answer: "Mery luz",
+  answer: "Luz mery",
 
   dadMemory: `Tu papá siempre será parte de ti. En tu forma de reír, en tu mirada cuando estás concentrada, en esa fuerza que aparece cuando más la necesitas. Él no se fue — se quedó en cada latido de tu corazón. Sigue brillando, que desde arriba él es tu estrella más brillante. 🌟`,
 
