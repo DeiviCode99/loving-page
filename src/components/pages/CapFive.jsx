@@ -1,18 +1,10 @@
-import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Heart,
   Star,
   Sparkles,
-  Play,
-  Pause,
-  Volume2,
-  VolumeX,
-  Maximize,
-  Minimize,
 } from "lucide-react";
 import capFiveData from "../../data/capFiveData.js";
-import finalVideo from "../../assets/video/final.mp4";
 
 const FloatingIcon = ({ Icon, className, delay = 0, size = 22 }) => (
   <motion.div
@@ -52,38 +44,6 @@ const itemVariants = {
 };
 
 const CapFive = () => {
-  const videoRef = useRef(null);
-  const [playing, setPlaying] = useState(false);
-  const [muted, setMuted] = useState(false);
-  const [fullscreen, setFullscreen] = useState(false);
-
-  const togglePlay = () => {
-    if (!videoRef.current) return;
-    if (playing) {
-      videoRef.current.pause();
-    } else {
-      videoRef.current.play();
-    }
-    setPlaying(!playing);
-  };
-
-  const toggleMute = () => {
-    if (!videoRef.current) return;
-    videoRef.current.muted = !muted;
-    setMuted(!muted);
-  };
-
-  const toggleFullscreen = () => {
-    if (!videoRef.current) return;
-    if (document.fullscreenElement) {
-      document.exitFullscreen();
-      setFullscreen(false);
-    } else {
-      videoRef.current.requestFullscreen();
-      setFullscreen(true);
-    }
-  };
-
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-[#0a0015] via-[#1a0010] to-[#0d001a] overflow-hidden">
       {/* Estrellas de fondo */}
@@ -239,41 +199,13 @@ const CapFive = () => {
 
                 {/* Contenedor del video */}
                 <div className="relative rounded-[2.2rem] overflow-hidden bg-black shadow-inner">
-                  <video
-                    ref={videoRef}
-                    src={finalVideo}
-                    className="w-full aspect-[9/16] object-cover"
-                    playsInline
-                    onEnded={() => setPlaying(false)}
+                  <iframe
+                    src="https://www.youtube.com/embed/G22PWJZ3n7A"
+                    title="Video final"
+                    className="w-full aspect-[9/16]"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
                   />
-
-                  {/* Overlay hover */}
-                  <div
-                    className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 cursor-pointer"
-                    onClick={togglePlay}
-                  />
-
-                  {/* Controles */}
-                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
-                    <button
-                      onClick={togglePlay}
-                      className="p-2.5 rounded-full bg-white/90 backdrop-blur-sm shadow-lg hover:bg-white hover:scale-110 active:scale-95 transition-all duration-200 text-rose-600"
-                    >
-                      {playing ? <Pause size={18} /> : <Play size={18} />}
-                    </button>
-                    <button
-                      onClick={toggleMute}
-                      className="p-2 rounded-full bg-white/80 backdrop-blur-sm shadow-lg hover:bg-white hover:scale-110 active:scale-95 transition-all duration-200 text-rose-600"
-                    >
-                      {muted ? <VolumeX size={16} /> : <Volume2 size={16} />}
-                    </button>
-                    <button
-                      onClick={toggleFullscreen}
-                      className="p-2 rounded-full bg-white/80 backdrop-blur-sm shadow-lg hover:bg-white hover:scale-110 active:scale-95 transition-all duration-200 text-rose-600"
-                    >
-                      {fullscreen ? <Minimize size={16} /> : <Maximize size={16} />}
-                    </button>
-                  </div>
                 </div>
 
                 {/* Placa inferior */}
